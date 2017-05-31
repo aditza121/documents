@@ -1,11 +1,12 @@
+### Documents app for Nextcloud 12 - This fork only has the necessary changes to make it work with NC 12. ###
+**Only the viewer works for now**
+
 documents
 =========
 
 Documents app for ownCloud
 
 An ownCloud app to work with office documents alone and/or collaboratively.
-
-[![Build Status](https://travis-ci.org/owncloud/documents.svg?branch=master)](https://travis-ci.org/owncloud/documents)
 
 ### Known issues ###
 **Problem**: Editor doesn't open. Spinner spins for ages.  
