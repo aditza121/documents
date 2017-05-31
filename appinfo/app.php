@@ -86,6 +86,74 @@ if ($c->query('AppConfig')->isConverterEnabled()){
 				]
 		]
 	);
+	
+	$xlsxFilter = new Office(
+		[
+		'read' =>
+			[
+				'target' => 'application/vnd.oasis.opendocument.spreadsheet',
+				'format' => 'ods:calc8',
+				'extension' => 'ods'
+			],
+		'write' => 
+			[
+				'target' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+				'format' => 'xlsx',
+				'extension' => 'xlsx'
+			]
+		]
+	);
+
+	$xlsFilter = new Office(
+		[
+		'read' =>
+			[
+				'target' => 'application/vnd.oasis.opendocument.spreadsheet',
+				'format' => 'ods:calc8',
+				'extension' => 'ods'
+			],
+		'write' => 
+			[
+				'target' => 'application/vnd.ms-excel',
+				'format' => 'xls',
+				'extension' => 'xls'
+			]
+		]
+	);
+
+	$pptxFilter = new Office(
+		[
+		'read' =>
+			[
+				'target' => 'application/vnd.oasis.opendocument.presentation',
+				'format' => 'odp:impress8',
+				'extension' => 'odp'
+			],
+		'write' => 
+			[
+				'target' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+				'format' => 'pptx',
+				'extension' => 'pptx'
+			]
+		]
+	);
+
+	$pptFilter = new Office(
+		[
+		'read' =>
+			[
+				'target' => 'application/vnd.oasis.opendocument.presentation',
+				'format' => 'odp:impress8',
+				'extension' => 'odp'
+			],
+		'write' => 
+			[
+				'target' => 'vnd.ms-powerpoint',
+				'format' => 'ppt',
+				'extension' => 'ppt'
+			]
+		]
+	);
 }
 
 //Listen to delete file signal
