@@ -16,7 +16,7 @@
 		<developer>https://github.com/owncloud/documents/blob/master/README.md</developer>
 	</documentation>
 	<dependencies>
-		<owncloud min-version="9.1" max-version="9.2" />
+		<owncloud min-version="9.1" max-version="12.2" />
 	</dependencies>
 	<public>
 		<documents>public.php</documents>
